@@ -75,3 +75,26 @@ exercises.c:83:15: error: unused variable ‘eliminado’ [-Werror=unused-variab
       |               ^~~~~~~~~
 cc1: all warnings being treated as errors
 ee28401
+Thu Mar 19 11:07:24 PM UTC 2026: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:83:48: error: expected statement before ‘)’ token
+   83 |          int *eliminado = (int*) popCurrent(L);)
+      |                                                ^
+exercises.c:85:24: error: implicit declaration of function ‘prev’ [-Wimplicit-function-declaration]
+   85 |          dato = (int*) prev(L)
+      |                        ^~~~
+exercises.c:85:17: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+   85 |          dato = (int*) prev(L)
+      |                 ^
+exercises.c:85:31: error: expected ‘;’ before ‘}’ token
+   85 |          dato = (int*) prev(L)
+      |                               ^
+      |                               ;
+   86 |       }
+      |       ~                        
+cc1: all warnings being treated as errors
+c4d21bc
