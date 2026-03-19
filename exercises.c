@@ -80,11 +80,11 @@ void eliminaElementos(List*L, int elem){
    int *dato = (int*) first(L);
    while(dato != NULL){
       if(*dato == elem){
-         int *eliminado = (int*) popCurrent(L);)
+         int *eliminado = (int*)popCurrent(L);)
          free(eliminado); 
-         dato = (int*) prev(L);
+         dato = (int*)prev(L);
       }else{
-         dato = (int*) next(L);
+         dato = (int*)next(L);
       }
    }
 }
