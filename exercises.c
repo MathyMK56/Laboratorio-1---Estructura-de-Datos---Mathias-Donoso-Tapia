@@ -137,7 +137,7 @@ int parentesisBalanceados(char *cadena) {
       }
    }
    
-   int *dato = (int*) pop(P)
+   int *dato = (int*) pop(P);
    if(dato != NULL){
       free(dato);
    }
