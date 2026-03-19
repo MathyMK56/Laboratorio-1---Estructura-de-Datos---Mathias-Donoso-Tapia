@@ -128,6 +128,10 @@ int parentesisBalanceados(char *cadena) {
       }
       else if(cadena[i] == ')'){
          int *dato = (int*) pop(P);
+         if(dato == NULL){
+            return 0;
+         }
+         
       }
    }
    return 0;
