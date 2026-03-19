@@ -126,6 +126,9 @@ int parentesisBalanceados(char *cadena) {
          *x = 1;
          push(P,x); 
       }
+      else if(cadena[i] == ')'){
+         int *dato = (int*) pop(P);
+      }
    }
    return 0;
 }

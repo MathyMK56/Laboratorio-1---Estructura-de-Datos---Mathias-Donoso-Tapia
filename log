@@ -454,3 +454,19 @@ exercises.c:121:15: error: implicit declaration of function ‘creat_stack’; d
       |               create_stack
 exercises.c:121:15: error: initialization of ‘Stack *’ {aka ‘List *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
 c301bec
+Thu Mar 19 11:20:53 PM UTC 2026: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:121:15: error: implicit declaration of function ‘creat_stack’; did you mean ‘create_stack’? [-Wimplicit-function-declaration]
+  121 |    Stack* P = creat_stack();
+      |               ^~~~~~~~~~~
+      |               create_stack
+exercises.c:121:15: error: initialization of ‘Stack *’ {aka ‘List *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+exercises.c:130:15: error: unused variable ‘dato’ [-Werror=unused-variable]
+  130 |          int *dato = (int*) pop(P);
+      |               ^~~~
+cc1: all warnings being treated as errors
+d8d4e26
