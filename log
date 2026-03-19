@@ -130,3 +130,17 @@ exercises.c:85:17: error: cast to pointer from integer of different size [-Werro
       |                 ^
 cc1: all warnings being treated as errors
 8299427
+Thu Mar 19 11:09:13 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:85:23: error: implicit declaration of function ‘prev’ [-Wimplicit-function-declaration]
+   85 |          dato = (int*)prev(L);
+      |                       ^~~~
+exercises.c:85:17: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+   85 |          dato = (int*)prev(L);
+      |                 ^
+cc1: all warnings being treated as errors
+96e7b62
