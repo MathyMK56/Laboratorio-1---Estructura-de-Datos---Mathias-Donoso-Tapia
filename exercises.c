@@ -135,4 +135,8 @@ int parentesisBalanceados(char *cadena){
          }
       }
    }
+   if(pop(P) != NULL){
+      return 0;
+   }
+   return 1;
 }
