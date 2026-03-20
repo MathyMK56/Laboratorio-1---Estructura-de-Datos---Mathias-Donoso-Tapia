@@ -621,3 +621,14 @@ exercises.c:138:11: error: ‘P’ undeclared (first use in this function)
   138 |    if(pop(P) != NULL){
       |           ^
 d63a1da
+Fri Mar 20 12:01:44 AM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:138:11: error: ‘P’ undeclared (first use in this function)
+  138 |    if(pop(P) != NULL){
+      |           ^
+exercises.c:138:11: note: each undeclared identifier is reported only once for each function it appears in
+d18c2bb
