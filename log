@@ -592,3 +592,18 @@ exercises.c:128:1: error: control reaches end of non-void function [-Werror=retu
       | ^
 cc1: all warnings being treated as errors
 703b18a
+Fri Mar 20 12:00:42 AM UTC 2026: 
+ exercises.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:123:16: error: ‘o’ undeclared (first use in this function)
+  123 |    for(int i = o; cadena[i] != '\0'; i++){
+      |                ^
+exercises.c:123:16: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:138:1: error: control reaches end of non-void function [-Werror=return-type]
+  138 | }
+      | ^
+cc1: all warnings being treated as errors
+e16b840
